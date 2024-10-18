@@ -1,0 +1,49 @@
+@font-face{
+    font-family: "Fake Identity";
+
+    src: url("../fonts/Fake\ Identity.ttf")
+}
+
+
+
+h1{
+    color: green;
+    letter-spacing: 20px;
+    word-spacing: 50px;
+    font-family: Brush Script MT,cursive; 
+}
+
+p{
+    text-indent: 50px;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif ;
+    font-weight: bold;
+}
+
+h2{
+    text-decoration: overline;
+    font-family: "Fake Identity";
+    
+
+
+}
+
+h3{
+    text-decoration: underline;
+}
+
+h4{
+    text-decoration: line-through;
+}
+
+.myElement{
+    font-size: 70px;
+    font-style: oblique;
+}
+
+
+
+
+
+
+
