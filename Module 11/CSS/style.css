@@ -1,0 +1,50 @@
+body{
+    background: url("../images/download.jfif");
+    background-size: cover;
+}
+
+h2{
+    color: pink;
+    margin: 100px 150px 100px 80px;
+    color: rgb(255, 0, 0);
+}
+
+p{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+h1{
+    color: #00d9FF;
+    border: 5px solid black;
+
+
+}
+
+h3{
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 60px;
+    padding-bottom: 70px;
+    padding: 20px 30px 70px 60px;
+
+    color: beige;
+
+}
+
+div{ 
+    background-color: powderblue;
+    height: 200px;
+    width: 50%;
+    max-width: 50%;
+}
+
+
+
+
+
+
