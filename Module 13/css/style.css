@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Midnight Blackfire';
+    src: url(../fonts/Midnight\ Blackfire.otf);
+}
+
+.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.random{
+    color: rgb(125, 179, 114);
+    text-decoration: none;
+}
+
+.random[href="https://facebook.com/"]{
+    color: rgb(134, 134, 243);
+    text-decoration: none;
+}
+
+.random:hover{
+    font-family: 'Midnight Blackfire';
+    font-size: 25px;
+}
+
+p[class*="ds"]{
+    background-color: blue;
+    color:white;
+    padding: 20px;
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(61, 59, 59);
+}
+
+ul li{
+    list-style-type: none;
+    padding: 5px;
+    overflow: auto;
+    display: block;
+    text-align: center;
+    /* float: left; */
+}
+
+div[id~="ds"]{
+    background: green;
+    color: white;
+    padding: 20px;
+}
+
+div[id^="ds"]{
+    background: red;
+    color: white;
+    padding: 20px;
+}
+
+div[id|="ds"]{
+    background: purple;
+    color: white;
+    padding: 20px;
+}
+
+input[readonly]{
+    border: 2px solid green;
+}
