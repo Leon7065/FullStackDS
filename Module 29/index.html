@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form onsubmit="return validate()">
+        <div class="name-container">
+            <label for="name" id="name_label">Name:</label>
+            <input type="text" name="name" id="name">
+            <span id="name_error"> Please enter a valid name.</span>
+        </div>
+    <form>
+        <div class="age-container">
+            <label for="age" id="age_label">Age:</label>
+            <input type="text" name="age" id="age">
+            <span id="age_error"> Please enter a valid Age.</span>
+        </div>
+    <form>
+        <div class="city-container">
+            <label for="city" id="city_label">City:</label>
+            <select name="city" id="city">
+                <option value="" selected></option>
+                <option value="Prishtina">Prishtina</option>
+                <option value="Gjilan">Gjilan</option>
+                <option value="Gjakova">Gjakova</option>
+                <option value="Mitrovica">Mitrovica</option>
+            </select>        
+            <span id="city_error"></span>
+        </div>
+        <button type="submit" name="submit">Send</button>
+    </form>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
