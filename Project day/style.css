@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(94, 90, 90);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav ul{
+    list-style-type: none;
+    color:white;
+    margin: 10px;
+    padding:10px;
+}
