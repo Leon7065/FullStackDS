@@ -1,13 +1,13 @@
 <?php
     include_once("config.php");
 
-    $ID = $_GET["ID"];
+    $id = $_GET["id"];
 
-    $sql = "DELETE from dashboard where ID=:ID";
+    $sql = "DELETE from dashboard where id=:id";
 
     $deleteUsers= $connect->prepare($sql);
 
-    $deleteUsers->bindParam(':ID',$ID);
+    $deleteUsers->bindParam(':id',$id);
 
     $deleteUsers->execute();
 

@@ -11,7 +11,9 @@
         td,th{
             padding:10px 20;
         }
+    
     </style>
+    
 </head>
 <body>
 <?php
@@ -20,7 +22,7 @@
     $getDashboard = $connect->prepare($sql);
     $getDashboard->execute();
     $dashboard = $getDashboard->fetchAll();
-?>
+?>  
     <table>
         <thead>
             <th>ID</th>
@@ -34,12 +36,11 @@
             foreach ($dashboard as $dashboards){
         ?>  
             <tr>
-                <td> <?= $dashboards['ID']?> </td>
-                <td> <?= $dashboards['Username']?> </td>
-                <td> <?= $dashboards['Name']?> </td>
-                <td> <?= $dashboards['Surname']?> </td>
-                <td> <?= $dashboards['test']?> </td>
-                <td><?="<a href='delete.php?ID=$dashboards[ID]'>Delete</a> | <a href='edit.php?ID=$dashboards[ID]'> Update </a>"?></td>
+                <td> <?= $dashboards['id']?> </td>
+                <td> <?= $dashboards['username']?> </td>
+                <td> <?= $dashboards['name']?> </td>
+                <td> <?= $dashboards['surname']?> </td>
+                <td><?="<a href='delete.php?id=$dashboards[id]'>Delete</a> | <a href='edit.php?id=$dashboards[id]'> Update </a>"?></td>
             </tr>
         <?php
             }

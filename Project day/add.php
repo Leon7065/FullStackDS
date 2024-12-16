@@ -1,18 +1,18 @@
 <?php
     include_once ('config.php');
     if(isset($_POST['submit'])){
-        $username = $_POST['Username'];
-        $name = $_POST['Name'];
-        $surname = $_POST['Surname'];
-        $email = $_POST['Email'];
-        $sql = "INSERT INTO dashboard(Username,Name,Surname,Email) values (:Username,:Name,:Surname,:Email)";
+        $username = $_POST['username'];
+        $name = $_POST['name'];
+        $surname = $_POST['surname'];
+        $email = $_POST['email'];
+        $sql = "INSERT INTO dashboard(username,name,surname,email) values (:username,:name,:surname,:email)";
   
         $sqlQuery = $connect->prepare($sql);
   
-        $sqlQuery->bindParam(':Username',$username);
-        $sqlQuery->bindParam(':Name',$name);
-        $sqlQuery->bindParam(':Surname',$surname);
-        $sqlQuery->bindParam(':Email',$email);
+        $sqlQuery->bindParam(':username',$username);
+        $sqlQuery->bindParam(':name',$name);
+        $sqlQuery->bindParam(':surname',$surname);
+        $sqlQuery->bindParam(':email',$email);
 
         $sqlQuery->execute();
   

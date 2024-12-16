@@ -1,28 +1,25 @@
 <?php
     include_once ('config.php');
     if(isset($_POST['submit'])){
-        $ID = $_POST['ID'];
-        $username = $_POST['Username'];
-        $name = $_POST['Name'];
-        $surname = $_POST['Surame'];
-        $email = $_POST['Email'];
-        $test = $_POST['test'];
+        $ID = $_POST['id'];
+        $username = $_POST['username'];
+        $name = $_POST['name'];
+        $surname = $_POST['surame'];
+        $email = $_POST['email'];
   
   
-        $sql = "UPDATE dashboard SET Username=:Username, Name=:Name, Surame=:Surame, Email=:Email, test=:test where ID=:ID";
+        $sql = "UPDATE dashboard SET username=:username, name=:name, surame=:surame, email=:email where id=:id";
   
         $sqlQuery = $connect->prepare($sql);
   
-        $sqlQuery->bindParam(':ID',$ID);
-        $sqlQuery->bindParam(':Username',$username);
-        $sqlQuery->bindParam(':Name',$name);
-        $sqlQuery->bindParam(':Surame',$surname);
-        $sqlQuery->bindParam(':Email',$email);
-        $sqlQuery->bindParam(':test',$test);
+        $sqlQuery->bindParam(':id',$id);
+        $sqlQuery->bindParam(':username',$username);
+        $sqlQuery->bindParam(':name',$name);
+        $sqlQuery->bindParam(':surame',$surname);
+        $sqlQuery->bindParam(':email',$email);
   
         $sqlQuery->execute();
 
         header("Location:index.php");
-
     }
 ?>

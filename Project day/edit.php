@@ -2,15 +2,15 @@
 
     include_once("config.php");
 
-    $ID=$_GET['ID'];
+    $id=$_GET['id'];
 
-    $sql= "SELECT * from dashboard where ID=:ID";
+    $sql= "SELECT * from dashboard where id=:id";
 
     $editDashBoard = $connect->prepare($sql);
 
-    $editDashBoard->bindParam(':ID',$ID);
+    $editDashBoard->bindParam(':id',$id);
 
-    $prep->execute();
+    $editDashBoard->execute();
 
     $data = $editDashBoard->fetch();
 
@@ -48,12 +48,11 @@
     
     <form action="add.php" method="POST">
 
-        <input type="hIDden" name="ID" value="<?php echo $data ['ID']?>"><br>
-        <input type="text" name="Username" value="<?php echo $data ['Username']?>"><br>
-        <input type="text" name="Name" value="<?php echo $data ['Name']?>"><br>
-        <input type="text" name="Surname" value="<?php echo $data ['Surname']?>"><br>
-        <input type="email" name="Email " value="<?php echo $data ['Email']?>"><br>
-        <input type="email" name="test " value="<?php echo $data ['test']?>"><br>
+        <input type="hidden" name="id" value="<?php echo $data ['id']?>"><br>
+        <input type="text" name="username" value="<?php echo $data ['username']?>"><br>
+        <input type="text" name="name" value="<?php echo $data ['name']?>"><br>
+        <input type="text" name="surname" value="<?php echo $data ['surname']?>"><br>
+        <input type="email" name="email " value="<?php echo $data ['email']?>"><br>
         <button type="submit" name="update">Update</button>
     </form>
 
